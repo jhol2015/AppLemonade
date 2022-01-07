@@ -20,7 +20,6 @@ import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
 import com.google.android.material.snackbar.Snackbar
-import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
 
@@ -137,15 +136,15 @@ class MainActivity : AppCompatActivity() {
             }
             SQUEEZE -> {
                 textAction.text = getString(R.string.lemon_squeeze)
-                lemonImage?.setImageResource(R.drawable.lemon_squeeze)
+                lemonImage.setImageResource(R.drawable.lemon_squeeze)
             }
             DRINK -> {
                 textAction.text = getString(R.string.lemon_drink)
-                lemonImage?.setImageResource(R.drawable.lemon_drink)
+                lemonImage.setImageResource(R.drawable.lemon_drink)
             }
             RESTART -> {
                 textAction.text = getString(R.string.lemon_empty_glass)
-                lemonImage?.setImageResource(R.drawable.lemon_restart)
+                lemonImage.setImageResource(R.drawable.lemon_restart)
             }
         }
         // TODO: set up a conditional that tracks the lemonadeState
